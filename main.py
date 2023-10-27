@@ -5,7 +5,7 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
 from typing import List
-from models import User
+from models import User, Red_flag, Status, Intervention
 
 DATABASE_URL = "sqlite:///./test.db"
 engine = create_engine(DATABASE_URL)
