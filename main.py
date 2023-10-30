@@ -7,7 +7,7 @@ from pydantic import BaseModel
 from typing import List
 from models import User, Red_flag, Status, Intervention
 
-DATABASE_URL = "sqlite:///./test.db"
+DATABASE_URL = "sqlite:///jiseti.db"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
